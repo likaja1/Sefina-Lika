@@ -1,0 +1,344 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sefina Lika Shalia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#dddfde] min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <header
+        class="fixed top-0 left-0 w-full z-50 bg-black/70 shadow-md flex justify-between items-center px-6 sm:px-20 py-6 border-b border-gray-700 backdrop-blur-md">
+        <img src="images/likago.png" alt="lika Logo" class="w-[180px] sm:w-[180px] mt-3 mb-3 ml-10" />
+        <nav>
+            <ul id="nav-links"
+                class="hidden sm:flex items-center space-x-6 font-semibold text-[#90beab] text-[16px] md:text-[22px] tracking-wide">
+                <li><a href="#home" class="hover:text-[#ffff]">Home</a></li>
+                <li><a href="#about me" class="hover:text-[#ffff]">About Me</a></li>
+                <li><a href="#work_experience" class="hover:text-[#ffff]">Work Experience</a></li>
+                <li><a href="#testimoni" class="hover:text-[#ffff]">Project</a></li>
+                <li><a href="#contact" class="hover:text-[#ffff]">Contact</a></li>
+            </ul>
+
+            <!-- Mobile menu button -->
+            <div class="sm:hidden z-60">
+                <button id="menu-btn" aria-label="Toggle menu" class="focus:outline-none">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu"
+        class="hidden fixed top-[3px] left-0 right-0 bg-black/70 px-6 pb-6 sm:hidden border-b border-gray-700 mt-40 z-50">
+        <ul class="flex flex-col space-y-4 text-white text-base font-normal">
+            <li><a href="#home" class="hover:text-[#90beab]">Home</a></li>
+            <li><a href="#about me" class="hover:text-[#90beab]">About Me</a></li>
+            <li><a href="#work_experience" class="hover:text-[#90beab]">Work Experience</a></li>
+            <li><a href="#testimoni" class="hover:text-[#90beab]">Project</a></li>
+            <li><a href="#contact" class="hover:text-[#90beab]">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <main class="flex-grow">
+        <!-- Your content goes here -->
+    </main>
+
+    <!-- Script to toggle mobile menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Toggle the mobile menu on click
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking outside of it
+        window.addEventListener('click', (event) => {
+            if (!menuBtn.contains(event.target) && !mobileMenu.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+
+    <!-- Section 1 -->
+    <section id="home"
+        class="bg-[#dddfde] flex flex-col items-center text-center py-12 px-4 sm:px-6 lg:px-12 mt-32 sm:mt-40 overflow-x-hidden mb-20">
+        <!-- Foto dengan Border -->
+        <div class="relative mt-12 sm:mt-16 w-32 sm:w-40 aspect-[4/5]">
+            <div class="absolute inset-0 rotate-[-6deg] border-8 border-[#3a4a3a] rounded z-0"></div>
+            <img src="images/lika.jpg" alt="lika's face"
+                class="relative z-10 w-full h-full object-cover border border-[#3a4a3a] rounded " />
+        </div>
+
+        <!-- Nama dan Profesi -->
+        <div class="mt-10 px-4 max-w-xl w-full">
+            <h1
+                class="font-extrabold text-4xl sm:text-4xl md:text-5xl lg:text-6xl tracking-widest mb-4 leading-tight text-[#3a4a3a] border-black">
+                SEFINA LIKA SHALIA
+            </h1>
+            <p class="tracking-widest text-sm sm:text-base md:text-lg text-gray-700 mb-16 sm:mb-20"
+                style="letter-spacing: 0.3em">
+                Web Developer & Android Developer
+            </p>
+        </div>
+    </section>
+    <!-- sec 2 -->
+    <main id="about me"
+        class="scroll-mt-28 max-w-6xl mx-auto p-6 sm:p-10 flex flex-col md:flex-row bg-[#fef7f0] rounded-lg mt-40 mb-20">
+        <section class="relative md:w-1/2 flex justify-center items-center pt-6 md:pt-0">
+            <div class="bg-[#3a4a3a] w-[320px] h-[320px] md:w-[400px] md:h-[400px] absolute bottom-0 left-0 rounded-sm">
+            </div>
+            <img alt="Desk with laptop, tortoise shell glasses, pen, black binder clips in a wooden bowl, and a black notebook on a beige fabric surface"
+                class="relative w-[280px] h-[280px] md:w-[350px] md:h-[350px] object-cover rounded-sm -translate-y-10 md:-translate-y-16"
+                height="350" src="images/mine2.jpg" width="350" />
+        </section>
+        <section class="md:w-1/2 flex flex-col justify-between pl-0 md:pl-12 pt-6 md:pt-0">
+            <div>
+                <hr class="border-t border-[#b9a96a] mb-6" />
+                <h1 class="text-[#3a4a3a] text-3xl font-bold mb-4">
+                    ABOUT ME
+                </h1>
+                <p class="text-[#3a4a3a] text-sm leading-relaxed mb-4">
+                    Mahasiswi Politeknik IIDN semester 2, Jurusan Rekayasa Perangkat Lunak (RPL) dengan minat dalam
+                    pengembangan perangkat lunak dan teknologi digital. Memiliki dasar pemrograman yang baik dalam Java
+                    dan HTML/CSS, serta keahlian dalam pengembangan aplikasi berbasis Laravel dan Flutter. Berpengalaman
+                    dalam REST API dan MySQL, serta terampil dalam merancang dan mengoptimalkan aplikasi. Selain itu,
+                    memiliki kemampuan mengaji, berbahasa Arab, dan dasar bahasa Inggris. Bersemangat untuk terus
+                    belajar, analitis, serta mampu bekerja dalam tim maupun mandiri.
+                </p>
+            </div>
+            <div>
+                <hr class="border-t border-[#b9a96a] my-6" />
+            </div>
+        </section>
+    </main>
+
+    <!-- sec 3 -->
+    <section id="work_experience" class="min-h-screen flex flex-col bg-[#dddfde] text-white mt-20">
+
+        <!-- Main: Dua kolom -->
+        <main class="flex flex-col sm:flex-row flex-1 min-h-screen w-full bg-[#7a7669]">
+            <!-- Kolom 1: Sebelum Kuliah -->
+            <section
+                class="flex flex-col justify-center px-6 sm:px-8 md:px-16 py-8 sm:py-10 md:py-0 sm:w-full md:w-1/2 space-y-4 sm:space-y-6 border-b sm:border-b-0 md:border-b-0 md:border-r border-white/10">
+                <h1 class="text-2xl sm:text-3xl font-extrabold leading-tight tracking-tight uppercase">
+                    Work<br />Experience
+                </h1>
+                <div class="flex items-center space-x-2 sm:space-x-3">
+                    <div class="border-l-2 border-white h-5 sm:h-6"></div>
+                    <div class="text-xs sm:text-sm font-bold uppercase leading-none tracking-widest">
+                        sebelum<br />kuliah
+                    </div>
+                </div>
+                <h2 class="font-bold uppercase tracking-widest">Pengalaman</h2>
+                <ul class="list-disc list-inside space-y-1 sm:space-y-2 text-sm sm:text-base">
+                    <li>Pengajaran SMA (2023–2024)</li>
+                    <li>Pengampu Halaqah (2023–2024)</li>
+                    <li>Pembina Asrama (2023–2024)</li>
+                </ul>
+            </section>
+
+            <!-- Kolom 2: Saat Kuliah -->
+            <section
+                class="flex flex-col justify-center px-6 sm:px-8 md:px-16 py-8 sm:py-10 md:py-0 sm:w-full md:w-1/2 space-y-4 sm:space-y-6">
+                <div class="flex items-center space-x-2 sm:space-x-3">
+                    <div class="border-l-2 border-white h-5 sm:h-6 mt-16"></div>
+                    <div class="text-xs sm:text-sm font-bold uppercase leading-none tracking-widest mt-16">
+                        saat<br />kuliah
+                    </div>
+                </div>
+                <h2 class="font-bold uppercase tracking-widest">Pengalaman</h2>
+                <ul class="list-disc list-inside space-y-1 sm:space-y-2 text-sm sm:text-base">
+                    <li>IDN Mengajar (2024)</li>
+                    <li>Kelas Training - Bootcamp Laravel (2025)</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Spacer/footer -->
+        <div class="bg-[#f3f3f3] h-12 sm:h-16 md:h-20"></div>
+    </section>
+
+    <!-- sec 4 -->
+    <section class="w-full min-h-screen bg-[#f3f3f3] p-4 sm:p-5">
+        <div class="relative max-w-6xl mx-auto rounded-lg min-h-[450px] sm:min-h-[400px]">
+            <!-- Center title -->
+            <div class="w-full text-center">
+                <h1
+                    class="text-[#3a4a3a] font-extrabold text-3xl sm:text-4xl md:text-5xl leading-tight inline-block border-b border-[#3a4a3a] border-dotted pb-1 select-none mb-40">
+                    SKILL
+                    <span class="inline-block align-middle">.</span>
+                    <span class="inline-block w-4 h-[1px] bg-[#3a4a3a] relative top-[0.6em] ml-1"></span>
+                </h1>
+            </div>
+
+            <!-- Grid Ikon Skill Responsif -->
+            <div
+                class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-8 justify-items-center items-center">
+                <!-- Skill icons -->
+                <img src="images/icons8-html-48.png" alt="HTML" class="w-14 h-14 sm:w-20 sm:h-20" />
+                <img src="images/icons8-css-48.png" alt="CSS" class="w-14 h-14 sm:w-20 sm:h-20" />
+                <img src="images/icons8-javascript-50.png" alt="JavaScript" class="w-14 h-14 sm:w-20 sm:h-20" />
+                <img src="images/icons8-tailwindcss-48.png" alt="Tailwind CSS" class="w-14 h-14 sm:w-20 sm:h-20" />
+                <img src="images/icons8-php-48.png" alt="PHP" class="w-14 h-14 sm:w-20 sm:h-20" />
+                <img src="images/icons8-mysql-50.png" alt="MySQL" class="w-14 h-14 sm:w-20 sm:h-20" />
+                <img src="images/icons8-bootstrap-50.png" alt="Bootstrap" class="w-14 h-14 sm:w-20 sm:h-20" />
+                <img src="images/icons8-laravel-64.png" alt="Laravel" class="w-14 h-14 sm:w-20 sm:h-20" />
+                <img src="images/icons8-flutter-48.png" alt="Flutter" class="w-14 h-14 sm:w-20 sm:h-20" />
+                <img src="images/icons8-api-48.png" alt="API" class="w-14 h-14 sm:w-20 sm:h-20" />
+            </div>
+        </div>
+    </section>
+
+    <!-- sec 5 -->
+    <section id="testimoni" class="min-h-screen flex items-center justify-center px-4 py-10 bg-[#7a7669]">
+        <div class="max-w-6xl w-full relative text-white">
+            <div class="flex items-center gap-4 mb-8 flex-wrap">
+                <h1 class="font-extrabold text-[40px] leading-[48px] text-[#f3f3f3]  flex-shrink-0 mt-10">
+                    Project Web & App
+                </h1>
+                <div class="flex-grow border-t border-[#3a4a3a]/70 min-w-[150px] mt-32"></div>
+            </div>
+            <div class="flex flex-wrap gap-6 justify-center">
+                <!-- Card 1: Aplikasi Ticketing -->
+                <div class="rounded-xl overflow-hidden flex-shrink-0 w-full sm:w-[400px] mt-7">
+                    <img alt="App Ticketing" class="w-full h-auto object-cover" height="300"
+                        src="images/appTicketing.png" width="400" />
+                    <p class="text-[20px] font-bold leading-[20px] text-[#cbd1d8] hover:text-amber-50 text-center mt-5">
+                        Aplikasi Ticketing
+                    </p>
+                </div>
+
+                <!-- Card 2: Website HauNusantara -->
+                <div class="flex flex-col gap-4 flex-shrink-0 w-full sm:w-[400px] mt-28">
+                    <div class="rounded-xl overflow-hidden">
+                        <img alt="Website HauNusantara" class="w-full h-auto object-cover" height="200"
+                            src="images/webHaynusantara.png" width="400" />
+                    </div>
+                    <p class="text-[20px] font-bold leading-[20px] text-[#cbd1d8] hover:text-amber-50 text-center mt-2">
+                        Website webHaynusantara
+                    </p>
+                </div>
+
+                <!-- Card 3: Website Pengaduan dan E-Commerce -->
+                <div class="flex flex-col gap-4 flex-shrink-0 w-full sm:w-[240px] mt-10">
+                    <!-- Website Pengaduan -->
+                    <div class="rounded-xl overflow-hidden">
+                        <img alt="website pengaduan" class="w-full h-auto object-cover" height="160"
+                            src="images/webPengaduan.png" width="240" />
+                    </div>
+                    <p class="text-[14px] font-bold leading-[20px] text-[#cbd1d8] hover:text-amber-50 text-center">
+                        Website Pengaduan
+                    </p>
+
+                    <!-- Website E-Commerce -->
+                    <div class="rounded-xl overflow-hidden">
+                        <img alt="website e-commerce" class="w-full h-auto object-cover" height="160"
+                            src="images/web e-commers.png" width="240" />
+                    </div>
+                    <p class="text-[14px] font-bold leading-[20px] text-[#cbd1d8] hover:text-amber-50 text-center">
+                        Website E-Commerce
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- sec 6 -->
+    <section id="contact" class="min-h-screen bg-[#dddfde] font-[Georgia] flex items-center justify-center p-6">
+        <div class="max-w-6xl w-full bg-[#bg-[#dddfde] rounded-lg shadow-md overflow-hidden">
+            <!-- Main Content -->
+            <div class="flex flex-col md:flex-row relative">
+                <!-- Left Section -->
+                <div
+                    class="bg-[#3B4A3B] text-[#FEF7ED] md:w-1/2 p-6 sm:p-10 relative z-10 flex flex-col justify-between">
+                    <div>
+                        <h1 class="text-3xl sm:text-4xl font-bold tracking-wide mb-4 leading-tight">
+                            CONTACT<br />ME
+                        </h1>
+                    </div>
+                    <!-- Small image (Vinyl) -->
+                    <img src="images/mine.jpg" alt="Vinyl"
+                        class="w-32 h-32 sm:w-32 sm:h-20 object-cover mt-6 mx-auto sm:mx-0" />
+                </div>
+
+                <!-- Right Section -->
+                <div class="md:w-1/2 bg-[#FEF7ED] relative">
+                    <!-- Overlapping coffee image -->
+                    <div class="relative h-[120px] sm:h-[150px] md:h-[180px] overflow-visible">
+                        <img src="images/minee.jpg" alt="Coffee"
+                            class="absolute top-0 left-[-33%] w-[133%] h-full object-cover z-20" />
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-3 gap-4 p-6 sm:p-8 text-[#3B4A3B] text-sm sm:text-base z-10 relative">
+                        <div>
+                            <h3 class="font-bold mb-1">Call</h3>
+                            <p class="font-normal">+62 823 1096 5681</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-1">Address</h3>
+                            <p class="font-normal">Tangerang Selatan, Banten</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold mb-1">Email</h3>
+                            <p class="font-normal break-words">sefinalika@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-black flex flex-col items-center justify-center gap-4 px-6 py-6 text-white text-sm">
+        <!-- Icons with links -->
+        <div class="flex gap-6 text-lg">
+            <a href="https://youtube.com/@withlika?si=tp_BiawJt6ClexQ_" target="_blank" rel="noopener noreferrer"
+                aria-label="YouTube">
+                <i class="fab fa-youtube hover:text-red-500"></i>
+            </a>
+            <a href="https://www.instagram.com/likaiaia_/" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram">
+                <i class="fab fa-instagram hover:text-pink-600"></i>
+            </a>
+            <a href="https://github.com/likaja1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fab fa-github hover:text-gray-300"></i>
+            </a>
+            <a href="#contact" aria-label="Telepon">
+                <i class="fas fa-phone-alt hover:text-green-400"></i>
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <p class="text-center text-white">
+            &copy; 2025 Sefina Lika Shalia. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+
+</html>
