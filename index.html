@@ -95,7 +95,7 @@
         <!-- Nama dan Profesi -->
         <div class="mt-10 px-4 max-w-xl w-full">
             <h1
-                class="font-extrabold text-4xl sm:text-4xl md:text-5xl lg:text-6xl tracking-widest mb-4 leading-tight text-[#3a4a3a] border-black">
+                class="font-extrabold font-[Georgia] text-4xl sm:text-4xl md:text-5xl lg:text-6xl tracking-widest mb-4 leading-tight text-[#3a4a3a] border-black">
                 SEFINA LIKA SHALIA
             </h1>
             <p class="tracking-widest text-sm sm:text-base md:text-lg text-gray-700 mb-16 sm:mb-20"
@@ -117,7 +117,7 @@
         <section class="md:w-1/2 flex flex-col justify-between pl-0 md:pl-12 pt-6 md:pt-0">
             <div>
                 <hr class="border-t border-[#b9a96a] mb-6" />
-                <h1 class="text-[#3a4a3a] text-3xl font-bold mb-4">
+                <h1 class="text-[#3a4a3a] text-3xl font-bold mb-4 font-[Georgia]">
                     ABOUT ME
                 </h1>
                 <p class="text-[#3a4a3a] text-sm leading-relaxed mb-4">
@@ -143,7 +143,7 @@
             <!-- Kolom 1: Sebelum Kuliah -->
             <section
                 class="flex flex-col justify-center px-6 sm:px-8 md:px-16 py-8 sm:py-10 md:py-0 sm:w-full md:w-1/2 space-y-4 sm:space-y-6 border-b sm:border-b-0 md:border-b-0 md:border-r border-white/10">
-                <h1 class="text-2xl sm:text-3xl font-extrabold leading-tight tracking-tight uppercase">
+                <h1 class="text-2xl font-[Georgia] sm:text-3xl font-extrabold leading-tight tracking-tight uppercase">
                     Work<br />Experience
                 </h1>
                 <div class="flex items-center space-x-2 sm:space-x-3">
@@ -187,7 +187,7 @@
             <!-- Center title -->
             <div class="w-full text-center">
                 <h1
-                    class="text-[#3a4a3a] font-extrabold text-3xl sm:text-4xl md:text-5xl leading-tight inline-block border-b border-[#3a4a3a] border-dotted pb-1 select-none mb-40">
+                    class="text-[#3a4a3a] font-[Georgia] font-extrabold text-3xl sm:text-4xl md:text-5xl leading-tight inline-block border-b border-[#3a4a3a] border-dotted pb-1 select-none mb-40">
                     SKILL
                     <span class="inline-block align-middle">.</span>
                     <span class="inline-block w-4 h-[1px] bg-[#3a4a3a] relative top-[0.6em] ml-1"></span>
@@ -213,60 +213,63 @@
     </section>
 
     <!-- sec 5 -->
-    <section id="testimoni" class="min-h-screen flex items-center justify-center px-4 py-10 bg-[#7a7669]">
+    <section id="testimoni" class="min-h-screen flex items-center justify-center px-4 py-10 bg-[#dddfde]">
         <div class="max-w-6xl w-full relative text-white">
             <div class="flex items-center gap-4 mb-8 flex-wrap">
-                <h1 class="font-extrabold text-[40px] leading-[48px] text-[#f3f3f3]  flex-shrink-0 mt-10">
+                <h1 class="font-extrabold font-[Georgia] text-[40px] leading-[48px] text-[#3a4a3a]  flex-shrink-0 mt-10">
                     Project Web & App
                 </h1>
                 <div class="flex-grow border-t border-[#3a4a3a]/70 min-w-[150px] mt-32"></div>
             </div>
-            <div class="flex flex-wrap gap-6 justify-center">
-                <!-- Card 1: Aplikasi Ticketing -->
-                <div class="rounded-xl overflow-hidden flex-shrink-0 w-full sm:w-[400px] mt-7">
-                    <img alt="App Ticketing" class="w-full h-auto object-cover" height="300"
-                        src="images/appTicketing.png" width="400" />
-                    <p class="text-[20px] font-bold leading-[20px] text-[#cbd1d8] hover:text-amber-50 text-center mt-5">
-                        Aplikasi Ticketing
-                    </p>
-                </div>
-
-                <!-- Card 2: Website HauNusantara -->
-                <div class="flex flex-col gap-4 flex-shrink-0 w-full sm:w-[400px] mt-28">
-                    <div class="rounded-xl overflow-hidden">
-                        <img alt="Website HauNusantara" class="w-full h-auto object-cover" height="200"
-                            src="images/webHaynusantara.png" width="400" />
-                    </div>
-                    <p class="text-[20px] font-bold leading-[20px] text-[#cbd1d8] hover:text-amber-50 text-center mt-2">
-                        Website webHaynusantara
-                    </p>
-                </div>
-
-                <!-- Card 3: Website Pengaduan dan E-Commerce -->
-                <div class="flex flex-col gap-4 flex-shrink-0 w-full sm:w-[240px] mt-10">
-                    <!-- Website Pengaduan -->
-                    <div class="rounded-xl overflow-hidden">
-                        <img alt="website pengaduan" class="w-full h-auto object-cover" height="160"
-                            src="images/webPengaduan.png" width="240" />
-                    </div>
-                    <p class="text-[14px] font-bold leading-[20px] text-[#cbd1d8] hover:text-amber-50 text-center">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-7">
+                <!-- Card 1: Website Pengaduan -->
+                <div class="rounded-xl overflow-hidden bg-[#7a7669] p-4 min-h-[400px]">
+                    <img alt="Website Pengaduan" class="w-full h-[200px] object-cover rounded-md mb-4" src="images/webPengaduan.png" />
+                    <h1 class="text-[20px] font-bold text-[#3a4a3a] hover:text-[#cbd1d8] mb-2">
                         Website Pengaduan
-                    </p>
-
-                    <!-- Website E-Commerce -->
-                    <div class="rounded-xl overflow-hidden">
-                        <img alt="website e-commerce" class="w-full h-auto object-cover" height="160"
-                            src="images/web e-commers.png" width="240" />
-                    </div>
-                    <p class="text-[14px] font-bold leading-[20px] text-[#cbd1d8] hover:text-amber-50 text-center">
-                        Website E-Commerce
+                    </h1>
+                    <p class="text-sm text-[#ffff]">
+                        Website ini merupakan platform digital yang menyajikan layanan pengaduan masyarakat. Website ini dikembangkan menggunakan framework Laravel dan Bootstrap, serta ditulis dengan bahasa pemrograman PHP.
                     </p>
                 </div>
+            
+                <!-- Card 2: Website HauNusantara -->
+                <div class="rounded-xl overflow-hidden bg-[#7a7669] p-4 min-h-[400px]">
+                    <img alt="Website HauNusantara" class="w-full h-[200px] object-cover rounded-md mb-4" src="images/webHaynusantara.png" />
+                    <h1 class="text-[20px] font-bold text-[#3a4a3a] hover:text-[#cbd1d8] mb-2">
+                        Website HauNusantara
+                    </h1>
+                    <p class="text-sm text-[#ffff]">
+                        Website ini merupakan platform digital yang menyajikan kekayaan Nusantara, mulai dari keindahan alam, keragaman budaya, hingga kuliner khas dari berbagai daerah di Indonesia. Website ini dikembangkan menggunakan Laravel dan Bootstrap, serta ditulis dengan bahasa pemrograman PHP.
+                    </p>
+                </div>
+            
+                <!-- Card 3: Ticketing Application -->
+                <div class="rounded-xl overflow-hidden bg-[#7a7669] p-4 min-h-[400px]">
+                    <img alt="Ticketing Application" class="w-full h-[200px] object-cover rounded-md mb-4" src="images/appTicketing.png" />
+                    <h1 class="text-[20px] font-bold text-[#3a4a3a] hover:text-[#cbd1d8] mb-2">
+                        Ticketing Application
+                    </h1>
+                    <p class="text-sm text-[#ffff]">
+                        Sistem digital yang dirancang untuk memfasilitasi proses pembuatan dan pengelolaan tiket, dengan menggunakan framework Flutter dan Laravel, serta ditulis menggunakan bahasa pemrograman Dart dan PHP.
+                    </p>
+                </div>
+            
+                <!-- Card 4: E-Commerce Website -->
+                <div class="rounded-xl overflow-hidden bg-[#7a7669] p-4 min-h-[400px]">
+                    <img alt="E-Commerce Website" class="w-full h-[200px] object-cover rounded-md mb-4" src="images/web e-commers.png" />
+                    <h1 class="text-[20px] font-bold text-[#3a4a3a] hover:text-[#cbd1d8] mb-2">
+                        E-Commerce Website
+                    </h1>
+                    <p class="text-sm text-[#ffff]">
+                        Sistem digital yang dirancang untuk memfasilitasi proses pembuatan dan pengelolaan tiket, dengan menggunakan framework Flutter dan Laravel, serta ditulis menggunakan bahasa pemrograman Dart dan PHP.
+                    </p>
+                </div>
+            </div>                          
             </div>
         </div>
+        </div>
     </section>
-
-
     <!-- sec 6 -->
     <section id="contact" class="min-h-screen bg-[#dddfde] font-[Georgia] flex items-center justify-center p-6">
         <div class="max-w-6xl w-full bg-[#bg-[#dddfde] rounded-lg shadow-md overflow-hidden">
@@ -327,6 +330,10 @@
             </a>
             <a href="https://github.com/likaja1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <i class="fab fa-github hover:text-gray-300"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/lika-ss-b99026316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin hover:text-blue-600"></i>
             </a>
             <a href="#contact" aria-label="Telepon">
                 <i class="fas fa-phone-alt hover:text-green-400"></i>
